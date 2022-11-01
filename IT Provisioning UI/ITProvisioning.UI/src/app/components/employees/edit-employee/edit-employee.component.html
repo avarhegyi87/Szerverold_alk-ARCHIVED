@@ -1,0 +1,88 @@
+<div class="container my-5">
+  <h1 class="mb-3">Edit Employee</h1>
+  <div class="row">
+    <div class="col-6">
+      <form #form="ngForm" (ngSubmit)="updateEmployee()">
+        <div class="mb-3">
+          <label for="id" class="form-label">Id</label>
+          <input
+            type="text"
+            class="form-control"
+            id="id"
+            name="id"
+            [(ngModel)]="employeeDetails.id"
+            readonly
+          />
+        </div>
+        <div class="mb-3">
+          <label for="inputFirstName" class="form-label">First Name</label>
+          <input
+            type="text"
+            class="form-control"
+            id="inputFirstName"
+            name="firstName"
+            [(ngModel)]="employeeDetails.firstName"
+          />
+        </div>
+        <div class="mb-3">
+          <label for="inputLastName" class="form-label">Last Name</label>
+          <input
+            type="text"
+            class="form-control"
+            id="inputLastName"
+            name="lastName"
+            [(ngModel)]="employeeDetails.lastName"
+          />
+        </div>
+        <div class="mb-3">
+          <label for="inputDepartment" class="form-label">Department</label>
+          <input
+            type="text"
+            class="form-control"
+            id="inputDepartment"
+            name="department"
+            [(ngModel)]="employeeDetails.department"
+          />
+        </div>
+        <div class="mb-3">
+          <label for="inputEmail" class="form-label">Email address</label>
+          <input
+            type="email"
+            class="form-control"
+            id="inputEmail"
+            name="email"
+            [(ngModel)]="employeeDetails.email"
+          />
+        </div>
+        <div class="mb-3">
+          <label for="inputPhone" class="form-label">Phone</label>
+          <input
+            type="text"
+            class="form-control"
+            id="inputPhone"
+            name="phone"
+            [(ngModel)]="employeeDetails.phone"
+          />
+        </div>
+        <div class="mb-3">
+          <label for="inputDevice" class="form-label">Device</label>
+          <input
+            type="text"
+            class="form-control"
+            id="inputDevice"
+            name="device"
+            [(ngModel)]="employeeDetails.device"
+          />
+        </div>
+        <button type="submit" class="btn btn-primary mr-5">Save</button>
+        <button
+          type="button"
+          class="btn btn-danger"
+          (click)="deleteEmployee(employeeDetails.id)"
+        >
+          Delete
+        </button>
+      </form>
+    </div>
+  </div>
+</div>
