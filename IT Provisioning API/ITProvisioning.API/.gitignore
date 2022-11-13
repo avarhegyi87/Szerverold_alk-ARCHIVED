@@ -1,0 +1,10 @@
+# See http://help.github.com/ignore-files/ for more about ignoring files.
+
+/FileContentIndex/*.vsidx
+/bin/**
+**/*.dll
+**/*.vsidx
+**/*.v2
+**/*v5.1
+.cache
+staticwebassets.pack.sentinel
