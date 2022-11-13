@@ -18,8 +18,6 @@ services.AddSwaggerGen();
 services.Configure<AppSettings>(builder.Configuration.GetSection("AppSettings"));
 services.AddScoped<IUserService, UserService>();
 
-//ConfigurationManager Configuration = builder.Configuration;
-//builder.Services.AddDbContext<ITProvisioningDbContext>(options => options.UseNpgsql(Configuration["ConnectionStrings:ITProvisionDbConnection"]));
 services.AddDbContext<ITProvisioningDbContext>(options => 
 options.UseNpgsql(builder.Configuration.GetConnectionString("ITProvisionDbConnection")));
 

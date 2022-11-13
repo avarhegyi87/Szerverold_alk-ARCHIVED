@@ -1,6 +1,6 @@
 <nav class="navbar navbar-dark navbar-expand-lg bg-primary">
   <div class="container-fluid">
-    <a class="navbar-brand" href="#">IT Provisioning Tool</a>
+    <a class="navbar-brand" routerLink="/">IT Provisioning Tool</a>
     <button
       class="navbar-toggler"
       type="button"
@@ -15,26 +15,44 @@
     <div class="collapse navbar-collapse" id="navbarText">
       <ul class="navbar-nav me-auto mb-2 mb-lg-0">
         <li class="nav-item">
-          <a class="nav-link active" aria-current="page" routerLink="employees"
+          <a class="nav-link active" aria-current="page" routerLink="/">Home</a>
+        </li>
+        <li class="nav-item">
+          <a
+            class="nav-link"
+            aria-current="page"
+            routerLink="login"
+            *ngIf="!currentUser"
+            >Log In</a
+          >
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" aria-current="page" routerLink="employees"
             >Employees</a
           >
         </li>
         <li class="nav-item">
-          <a class="nav-link" aria-current="page" routerLink="employees/add"
+          <a
+            class="nav-link"
+            aria-current="page"
+            routerLink="employees/add"
+            *ngIf="currentUser"
             >Add Employee</a
           >
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Menu 3</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Menu 4</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Menu 5</a>
+          <a
+            class="nav-link"
+            aria-current="page"
+            (click)="logout()"
+            *ngIf="currentUser"
+            >Log Out</a
+          >
         </li>
       </ul>
-      <span class="navbar-text"> Navbar text with an inline element </span>
+      <span class="navbar-text" *ngIf="currentUser">
+        Logged in as {{ currentUser.firstName }} {{ currentUser.lastName }}
+      </span>
     </div>
   </div>
 </nav>

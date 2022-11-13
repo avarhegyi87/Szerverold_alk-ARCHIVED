@@ -1,0 +1,13 @@
+<div class="card mt-4">
+    <h4 class="card-header">Angular & .NET Core app with JWT authentication!</h4>
+    <div class="card-body">
+        <h6>Users from secure api end point</h6>
+        <div *ngIf="loading" class="spinner-border spinner-border-sm"></div>
+        <ul *ngIf="currentUser">
+            <li *ngFor="let user of users">{{user.firstName}} {{user.lastName}}</li>
+        </ul>
+        <div *ngIf="!currentUser">
+            <p>Log In to see users, or to add, or modify employee data.</p>
+        </div>
+    </div>
+</div>
