@@ -34,3 +34,8 @@ C:\Users\maste\source\repos\Szerverold_alk-aspnet_angular_webapi\IT Provisioning
 C:\Users\maste\source\repos\Szerverold_alk-aspnet_angular_webapi\IT Provisioning API\ITProvisioning.API\ITProvisioning.API\obj\Debug\net6.0\ITProvisioning.API.pdb
 C:\Users\maste\source\repos\Szerverold_alk-aspnet_angular_webapi\IT Provisioning API\ITProvisioning.API\ITProvisioning.API\obj\Debug\net6.0\ITProvisioning.API.genruntimeconfig.cache
 C:\Users\maste\source\repos\Szerverold_alk-aspnet_angular_webapi\IT Provisioning API\ITProvisioning.API\ITProvisioning.API\obj\Debug\net6.0\ref\ITProvisioning.API.dll
+C:\Users\maste\source\repos\Szerverold_alk-aspnet_angular_webapi\IT Provisioning API\ITProvisioning.API\ITProvisioning.API\bin\Debug\net6.0\Microsoft.IdentityModel.Abstractions.dll
+C:\Users\maste\source\repos\Szerverold_alk-aspnet_angular_webapi\IT Provisioning API\ITProvisioning.API\ITProvisioning.API\bin\Debug\net6.0\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Users\maste\source\repos\Szerverold_alk-aspnet_angular_webapi\IT Provisioning API\ITProvisioning.API\ITProvisioning.API\bin\Debug\net6.0\Microsoft.IdentityModel.Logging.dll
+C:\Users\maste\source\repos\Szerverold_alk-aspnet_angular_webapi\IT Provisioning API\ITProvisioning.API\ITProvisioning.API\bin\Debug\net6.0\Microsoft.IdentityModel.Tokens.dll
+C:\Users\maste\source\repos\Szerverold_alk-aspnet_angular_webapi\IT Provisioning API\ITProvisioning.API\ITProvisioning.API\bin\Debug\net6.0\System.IdentityModel.Tokens.Jwt.dll

@@ -8,3 +8,4 @@
 **/*v5.1
 .cache
 staticwebassets.pack.sentinel
+**/*.suo
